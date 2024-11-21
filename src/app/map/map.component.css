@@ -1,0 +1,5 @@
+.map-svg {
+    width: 100%;
+    height: auto;
+    pointer-events: all; /* Ensure events propagate */
+  }

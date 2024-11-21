@@ -1,0 +1,18 @@
+<div class="map-container">
+    <div id="map-svg-container">
+        <div id="svg-container" [innerHTML]="svgContent"></div>
+      </div>
+    <div class="info-container">
+      <h2>Country Data</h2>
+      <p *ngIf="!countryClicked">Click on countries for data</p>
+      <div *ngIf="countryClicked">
+        <div>Country: {{ countryName }}</div>
+        <div>Capital: {{ capitalCity }}</div>
+        <div>Region: {{ region }}</div>
+        <div>Income Level: {{ incomeLevel }}</div>
+        <div>Longitude: {{ longitude }}</div>
+        <div>Latitude: {{ latitude }}</div>
+      </div>
+      <p class="citation-container">Powered By <span>The World Bank</span></p>
+    </div>
+  </div>
